@@ -14,7 +14,7 @@ const navigation = [
 export const Navbar = () => {
   const [display, setDisplay] = useState(false);
   return (
-    <div className="w-full bg-white/70 h-20 shadow-md">
+    <div className="w-full bg-white/70 h-20 shadow-md sticky top-0 z-50 transition-colors">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
         <Logo
           title="Bloggers"
