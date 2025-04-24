@@ -7,7 +7,7 @@ import { BsFacebook, BsInstagram, BsYoutube, BsGithub } from "react-icons/bs";
 export const Footer = () => {
   return (
     <div>
-      <Container className="p-10 bg-zinc-900 text-gray-100 flex items-center justify-between">
+      <div className="p-10 bg-zinc-900 text-gray-100 flex items-center justify-between">
         <Logo title="Bloggers" className="text-white tracking-wider" />
         <div className="hidden md:inline-flex gap-4 items-center">
           <BsYoutube
@@ -32,7 +32,7 @@ export const Footer = () => {
           <FaHeart size={14} className="mx-1" />
           By Oussama
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

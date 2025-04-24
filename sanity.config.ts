@@ -2,23 +2,29 @@ import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./sanity/schemaTypes";
+import { StudioNavbar } from "./components/StudioNavbar";
 
-// const projectId = process.env.SANITY_STUDIO_PROJECT_ID;
-// const dataset = process.env.SANITY_STUDIO_DATASET;
-const projectsId = process.env;
-console.log("projectId", projectsId);
+const projectId = process.env.NEXT_PUBLIC_PROJECT_ID!;
+const dataset = process.env.NEXT_PUBLIC_DATASET!;
+
+console.log("project id", projectId);
 
 export default defineConfig({
   basePath: "/studio",
   name: "Sanity_Blogging",
   title: "Sanity Blogging",
 
-  projectId: "p1h6b1n6",
-  dataset: "production",
+  projectId,
+  dataset,
 
   plugins: [structureTool(), visionTool()],
 
   schema: {
     types: schemaTypes,
+  },
+  studio: {
+    components: {
+      navbar: StudioNavbar,
+    },
   },
 });

@@ -6,8 +6,8 @@ import { FiMenu } from "react-icons/fi";
 
 const navigation = [
   { title: "Home", href: "/" },
-  { title: "Features", href: "/features" },
-  { title: "About me", href: "/about" },
+  { title: "Features", href: "/" },
+  { title: "About me", href: "/" },
   { title: "Studio", href: "/studio" },
 ];
 
