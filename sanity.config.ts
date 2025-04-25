@@ -7,8 +7,6 @@ import { StudioNavbar } from "./components/StudioNavbar";
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID!;
 const dataset = process.env.NEXT_PUBLIC_DATASET!;
 
-console.log("project id", projectId);
-
 export default defineConfig({
   basePath: "/studio",
   name: "Sanity_Blogging",
