@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 export const StudioNavbar = (props: any) => {
   return (
     <div>
-      <div className="p-5 bg-blue-700 text-gray-100 flex items-center justify-between">
+      <div className="p-5 bg-zinc-900 text-gray-100 flex items-center justify-between">
         <Link
           href="/"
           className="flex items-center gap-3 font-semibold hover:text-blue-600 duration-200"

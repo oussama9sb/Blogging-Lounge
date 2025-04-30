@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { FaHeart } from "react-icons/fa";
 import { BsFacebook, BsInstagram, BsYoutube, BsGithub } from "react-icons/bs";

@@ -15,7 +15,6 @@ const config = [
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   ...compat.config({
     extends: ["next"],

@@ -12,13 +12,10 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import { PortableText } from "@portabletext/react";
-import { RichText } from "@/components/RichText";
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
+type Props = {
+  params: Promise<{ slug: string }>;
+};
 
 export const revalidate = 30;
 
@@ -108,7 +105,7 @@ const SlugPage = async ({ params }: Props) => {
         </div>
       </div>
       <div>
-        <PortableText value={post?.body} components={RichText} />
+        <PortableText value={post?.body} />
       </div>
     </Container>
   );
