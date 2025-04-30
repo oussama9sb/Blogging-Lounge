@@ -13,7 +13,6 @@ categories[]->
 
 export default async function Home() {
   const posts = await client.fetch(query);
-  console.log("posts", posts);
 
   return (
     <main>
